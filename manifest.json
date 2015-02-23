@@ -1,0 +1,15 @@
+{
+  "name":"Plickr ME!",
+  "manifest_version":2,
+  "description":"Desktop to Phone Sync",
+  "version": "0.1",
+  "permissions": ["http://*/","contextMenus","storage","notifications" ],
+  "browser_action": {
+    "default_icon": "img/logo-128.png",
+    "default_popup": "popup.html"
+  },
+  "background":{"scripts":["js/jquery.min.v1.10.2.js","js/global.js","js/rightclick.js","js/plickrStorage.js"],"pages":["background.html"]},
+  "icons": { "16": "img/logo-16.png",
+    "48": "img/logo-48.png",
+    "128": "img/logo-128.png" }
+}

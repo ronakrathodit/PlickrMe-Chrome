@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/jquery.min.v1.10.2.js" ></script>
+    <script type="text/javascript" src="js/plickrStorage.js" ></script>
+    <script type="text/javascript" src="js/global.js" ></script>
+
+    <script type="text/javascript" src="js/bootstrap.min.js" ></script>
+
+    <script type="text/javascript" src="js/register.js" ></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="col-xs-12">
+        <div class="welcome">
+
+            <div class="gap"> </div>
+<div id="result"></div>
+<div class="">
+    <form>
+        <fieldset >
+            <legend class="text-danger">Credentials</legend>
+            <div class="pad-md1">
+                <label>Email ID</label>
+                <input type="text" id="register_email" class="form-control required">
+            </div>
+            <div class="pad-md1">
+                <label>Password</label>
+                <input type="password" id="register_password" class="form-control required">
+            </div>
+
+        </fieldset>
+        <div class="gap"> </div>
+        <fieldset >
+            <legend class="text-info">Personal Information</legend>
+            <div class="pad-md1">
+                <label>Full Name</label>
+                <input type="text" id="register_fname" class="form-control required">
+            </div>
+            <div class="">
+                <label>Mobile</label>
+                <input type="" id="register_mob" maxlength="10" onkeypress="return isNumber(event);" class="form-control required">
+            </div>
+            <div class="row ">
+            <div class="pull-left col-xs-6">
+                <label>I am</label>
+                <select class="form-control required"  id="register_gender"><option>Male</option><option>Female</option></select>
+            </div>
+            <div class="pull-right col-xs-6">
+                <label>Country</label>
+                <select id="register_country" class="form-control required"><option>India</option></select>
+            </div>
+</div>
+            <div class="clearfix"> </div>
+
+            <div class="gap"> </div>
+            <button type="button" class="btn btn-primary btn-block" id="btn_register" >Create Account. It's Free!</button>
+        </fieldset>
+
+
+    </form>
+
+</div>
+
+            <div class="center"><a href="popup.html" class="text-info" ><h4> &laquo; Back </h4></a></div>
+
+            <!--  <h2>Welcome to Plickr Me</h2>
+              <p>Plickr Me is a multi platform auto sync app which bring any data from phone to pc or vice versa</p>-->
+
+            <!--<input type="button" class="btn btn-primary col-xs-5 pull-left" value="Login" id="btn_login" /> -->
+
+
+
+        </div>
+
+    </div>
+    <div class="clearfix"> </div>
+    <div class="gap"> </div>
+
+
+
+
+    <!--  <footer class="footer col-xs-12">
+          <div class="col-xs-4 pull-right">
+              <img class="pull-left" src="img/growthwell.jpg">
+              <div class="pull-right" style="text-align:left;margin-left: 5px"> Powered  By <br>
+                  <a href="http://www.growthwell.com/?ref=plickr-extension-for-chrome"><b class="text-color">Growthwell Consulting Pvt. Ltd.</b></a></div>
+          </div>
+
+      </footer>-->
+</div>
+</body>
+</html>
