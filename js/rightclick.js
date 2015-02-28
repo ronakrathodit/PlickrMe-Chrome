@@ -81,6 +81,7 @@ function insertDB(txt) {
 }
 function sendGrabs(obj,callback) {
     var param = $.param(obj);
+    console.log(param);
     $.ajax({
         type: 'post',
         url: POST_GRAB,
