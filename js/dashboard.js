@@ -1,16 +1,43 @@
 /**
  * Created by Rafique on 17/2/2015.
  */
+<<<<<<< HEAD
 
 var isLogged = false;
 var username = "";
 var email, AuthID;
 chrome.storage.local.get("pk", function (session) {
+=======
+/*
+ var UserInfo=getLocalData("UserInfo");
+
+ console.log("Object Console");
+
+ console.log(""+UserInfo.isLogged);
+ console.log("Array Console");
+
+ console.log(UserInfo['isLogged']);
+
+ if(UserInfo.isLogged==true){
+ username = UserInfo.FullName;
+ email = UserInfo.Email;
+ AuthID = UserInfo.AuthID;
+ }else {
+ //window.location.replace("popup.html");
+
+ }
+ */
+var isLogged = false;
+var username = "";
+var email, AuthID;
+chrome.storage.local.get("UserInfo", function (session) {
+>>>>>>> origin/master
     if (chrome.runtime.error) {
         console.log(chrome.runtime.error);
 
     } else {
 
+<<<<<<< HEAD
         isLogged = session.pk.UserInfo.islogged;
         username = session.pk.UserInfo.fullname;
         email = session.pk.UserInfo.email;
@@ -18,6 +45,15 @@ chrome.storage.local.get("pk", function (session) {
 
         if (!isLogged) {
             window.location.replace("welcome.html");
+=======
+        isLogged = session.UserInfo.isLogged;
+        username = session.UserInfo.FullName;
+        email = session.UserInfo.Email;
+        AuthID = session.UserInfo.AuthID;
+
+        if (!isLogged) {
+            window.location.replace("popup.html");
+>>>>>>> origin/master
         }
 
 
@@ -48,6 +84,7 @@ chrome.storage.local.get("pk", function (session) {
                                 device_img='<img src=\'img/apple-16.png\'/>';
                             }
                             var device_type = response.rows.item(i).device_type;
+<<<<<<< HEAD
                             list+="<div class='container_"+device_grabid+"'>\
                                           <div class='card card-default'>\
                                             <div class='card-heading'>\
@@ -61,6 +98,26 @@ chrome.storage.local.get("pk", function (session) {
                                             <p>"+response.rows.item(i).title+"</p>\
                                             </div>\
                                             </a></div></div>";
+=======
+                            list+="<div class='container container_"+device_grabid+"'>\
+                                    <div class='row'>\
+                                    <div class='col-xs-12'>\
+                                        <div class='card card-default'>\
+                                            <div class='card-heading'>\
+                                            <a class='text-danger cursor pull-right delete_grabdata' title='Delete'>\
+                                            <img src='img/circle-cross-16.png'> \
+                                            <input type='hidden' class='hidden_grabid' value='3'></a>\
+                                            <div class='card_img'>\
+                                            <img src='img/chrome-16.png' style='width: 30px;'> \
+                                            <p class='card_title'>"+device_type+"</p>\
+                                            <p class='card_date'>"+added_on+"</p></div></div>\
+                                            <a href='grab.html?grab_id="+device_grabid+"'><div class='card-body'>\
+                                            <p>"+response.rows.item(i).title+"</p>\
+                                            </div>\
+                                            </a></div></div>\
+                                        </div>\
+                                    </div>";
+>>>>>>> origin/master
                         }
                         $('.empty_list').hide();
                         $('.data_list').html(list).show();
