@@ -2,8 +2,11 @@
  * Created by Rafique on 18/2/2015.
  */
 
-var LOGIN_URL="http://api.plickr.me/Login";
+var LOGIN_URL="http://api.plickr.me/User/Login";
+var SIGNUP_URL="http://api.plickr.me/User/Register";
 var POST_GRAB="http://api.plickr.me/User/Grab";
+var DELETE_GRAB="http://api.plickr.me/User/Grab";
+
 function PlickrNotify(){
            var notif_id="plickr0";
         chrome.notifications.clear(notif_id,function(){

@@ -1,56 +1,196 @@
-body{
-    min-width:400px;
-    max-width:500px;
+body {
+    min-width: 400px;
+    max-width: 500px;
+    min-height: 200px;
     max-height: 500px;
 
 }
-.hover{
+.nav-custom{
+    box-shadow: 0 1px 20px 0 #99bb00;
+    border: 1px solid #99bb00;
+}
+.hover {
     cursor: pointer;
 }
-.no-display{
+
+.no-display {
     display: none;
 
 }
-.light-gray{
+
+.light-gray {
     color: #cccccc !important;
 }
-.dark-gray{
+
+.dark-gray {
     color: #444444 !important;
 }
-.logo{
+
+.logo {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.pad-md{
+
+.pad-md {
     padding: 10px !important;
-}.pad-lg{
+}
+
+.pad-lg {
     padding: 20px !important;
 }
- .pad-sm{
-     padding: 5px !important;
- }
-.display-center{
+
+.pad-sm {
+    padding: 5px !important;
+}
+
+.display-center {
     margin: auto !important;
 }
-.center{
+
+.center {
     text-align: center;
 }
-.footer{
-    padding:10px;
-    border-top:1px solid #cccccc;
+
+.footer {
+    padding: 10px;
+    border-top: 1px solid #cccccc;
     margin-top: 20px;
     font-size: 11px;
 }
-.gap:before{
+
+.gap:before {
     content: " ";
     height: 20px;
 }
-.gap{
-    content:"&nbsp;";
-    margin-top:20px;
+
+.gap {
+    content: "&nbsp;";
+    margin-top: 20px;
     margin-bottom: 20px;
 }
+
 /* Scroll Bar */
-::-webkit-scrollbar { width: 8px; }
-::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); }
-::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:window-inactive  { background: #cccccc; }
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:window-inactive {
+    background: #cccccc;
+}
+
+/** Card view css **/
+hr {
+    border-color: #ececec;
+}
+
+button {
+    outline: 0;
+}
+
+textarea {
+    resize: none;
+    outline: 0;
+}
+
+.card {
+    box-shadow: 0 2px 1px 1px #ccc;
+    border-radius: 3px;
+    background: #ffffff;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    cursor: pointer;
+
+}
+
+.card .btn i, .btn span, .card a {
+    color: #666666;
+}
+
+.card .card-heading {
+    background-color: #ffffff;
+    /*font-weight:700;*/
+    font-size: 11px;
+    padding: 5px;
+    color: #262626;
+    border-bottom: 1px solid #efefef;
+}
+
+.card-body p {
+    color: #444444;
+    padding-top: 5px;
+}
+
+.card .card-default {
+    border-color: #cccccc;
+}
+
+.card .card-thumbnail {
+    padding: 0;
+}
+
+.card .img-circle {
+    width: 50px;
+    height: 50px;
+}
+
+.card_title {
+    display: inline;
+    vertical-align: top;
+}
+
+.card_date {
+    position: relative;
+    margin: 0 5px;
+    font-size: 10px;
+    color: #aaaaaa;
+}
+
+.list-group-item:first-child, .list-group-item:last-child {
+    border-radius: 0;
+}
+
+.modal-dialog {
+    width: 450px;
+}
+
+.modal-footer {
+    border-width: 0;
+}
+
+.dropdown-menu {
+    background-color: #f4f4f4;
+    border-color: #f0f0f0;
+    border-radius: 0;
+    margin-top: -1px;
+}
+
+#card_container {
+    padding-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.nav > li > a {
+    text-decoration: none !important;
+    background: none !important;
+    color: #ffffff !important;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none !important;
+    background: none !important;
+    color: #ffffff !important;
+}

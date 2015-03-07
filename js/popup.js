@@ -1,13 +1,28 @@
 /**
  * Created by Rafique on 17/2/2015.
  */
-var bg=chrome.extension.getBackgroundPage();
+
 var tollCheck=function(isLog){
-    if(isLog){
-        window.location.replace("dashboard.html");
-    }
+
+        if(isLog){
+            window.location.replace("dashboard.html");
+        }else{
+            window.location.replace("welcome.html");
+        }
+
 };
-bg.isUserLogged(tollCheck);
+
+chrome.storage.local.get("pk", function (data) {
+    if (chrome.runtime.error) {
+        console.log(chrome.runtime.error);
+    } else {
+      if(data.pk.UserInfo.islogged){
+          tollCheck(true);
+      }else{
+          tollCheck(false);
+      }
+    }
+});
 
 
 
